@@ -1,22 +1,17 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import XXX from './xxx.vue'
+import TestItem from './xxx.vue'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
+import '../../../static/iconfont/iconfont.css'
+import HeaderItem from '../../components/Header.vue'
+import FooterItem from '../../components/Footer.vue'
 
-Vue.use(Router)
-
-const routes = [
-  {path: '/', component: XXX}
-]
-
-const router = new Router({
-  routes
-})
-
+Vue.use(iView)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   data: {
-    ttt: 'xxx'
-  }
+    ttt: 'sss'
+  },
+  components: {TestItem, HeaderItem, FooterItem}
 })

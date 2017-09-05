@@ -1,0 +1,64 @@
+$font: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+$smtred:#a9263f;
+$blue:#2196F3;
+$lightblue:#64B5F6;
+
+
+body, h1, h2, h3, h4, h5,h6, p, div, span, a, ul, li, table, th, td, tr{
+  font-family: $font;
+}
+a
+{
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover
+{
+  color: $smtred;
+}
+.con {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  min-width: 1180px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.8em;
+  text-indent: 28px;
+  margin: 15px 0;
+}
+
+.center{
+  text-align: center;
+}
+.normal
+{
+  font-weight: normal;
+}

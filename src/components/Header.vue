@@ -3,7 +3,7 @@
     <div class="eyebrow">
       <div class="con">
         <a href="http://www.moyasz.com" target="_blank">莫亚科技旗下产品</a>
-        <span class="phone">咨询电话: 0731-8556 3963</span>
+        <span class="phone"><i class="iconfont">&#xe682;</i>咨询电话: 0731-8556 3963</span>
       </div>
     </div>
     <div class="menu">
@@ -87,20 +87,7 @@
 
   }
 
-  .item-wrap {
-    display: inline-block;
-    position: relative;
-    a {
-      font-size: inherit;
-      line-height: 30px;
-    }
 
-    /*.sub-menu {*/
-      /*position: absolute;*/
-      /*left: 0;*/
-      /*top: 60px;*/
-    /*}*/
-  }
 
   .active {
     color: $smtred;
@@ -114,6 +101,8 @@
 
   .menu {
     height: 60px;
+    width: 100%;
+    display: block;
     .con {
       position: relative;
     }
@@ -131,13 +120,31 @@
     a {
       display: inline-block;
       margin: 0 15px;
+      font-size: inherit;
+      line-height: 30px;
     }
+  }
+
+  .item-wrap {
+    display: inline-block;
+    position: relative;
+  }
+
+  @media screen and(min-width: 1650px) {
+    .menu-items{
+      a
+      {
+        font-size: 18px;
+      }
+    }
+
   }
 
   .sub-menu {
     width: 150px;
     background: #ffffff;
     position: absolute;
+    z-index: 10;
     top: 60px;
     left: -5px;
     font-size: 0;

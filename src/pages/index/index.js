@@ -10,6 +10,7 @@ import '../../../static/iconfont/iconfont.css'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import Service from '../../components/Service.vue'
+import Crsl from './Crsl.vue'
 
 Vue.use(iView)
 
@@ -21,5 +22,5 @@ new Vue({
   data: {
     switzer: './static/img/switzerland.jpg'
   },
-  components: {HeaderItem, FooterItem, Service}
+  components: {HeaderItem, FooterItem, Service, Crsl}
 })

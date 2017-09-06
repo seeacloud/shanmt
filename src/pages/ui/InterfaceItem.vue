@@ -6,7 +6,7 @@
       <h2 class="normal">二级标题 H2 32px</h2>
       <h3>三级标题 H3 28px</h3>
       <h4>四级标题 H4 24px</h4>
-      <h5>五级标题 H5 20px</h5>
+      <h5>五级标题 H5 18px</h5>
       <h6>六级标题 H6 14px</h6>
 
       <h1 class="center">山木通 让管理更轻松</h1>

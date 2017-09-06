@@ -81,6 +81,7 @@
     border-bottom: 1px solid #eeeeee;
     height: 30px;
     font-size: 12px;
+    min-width:1180px;
     .con {
       height: 30px;
     }
@@ -102,6 +103,7 @@
   .menu {
     height: 60px;
     width: 100%;
+    min-width:1180px;
     display: block;
     .con {
       position: relative;

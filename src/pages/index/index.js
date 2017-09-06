@@ -11,6 +11,7 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import Service from '../../components/Service.vue'
 import Crsl from './Crsl.vue'
+import '../../../static/normal.css'
 
 Vue.use(iView)
 

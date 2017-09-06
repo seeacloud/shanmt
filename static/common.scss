@@ -7,6 +7,11 @@ $lightblue:#64B5F6;
 body, h1, h2, h3, h4, h5,h6, p, div, span, a, ul, li, table, th, td, tr{
   font-family: $font;
 }
+
+body
+{
+  background: #eee;
+}
 a
 {
   text-decoration: none;
@@ -61,4 +66,21 @@ p {
 .normal
 {
   font-weight: normal;
+}
+
+.smt-btn
+{
+  display: inline-block;
+  background: $blue;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+.smt-btn:hover
+{
+  background: $lightblue;
+  color: #fff;
 }

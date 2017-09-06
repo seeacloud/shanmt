@@ -9,10 +9,11 @@ import FooterItem from '../../components/Footer.vue'
 import '../../../static/iconfont/iconfont.css'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import Service from '../../components/Service.vue'
 
 Vue.use(iView)
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
@@ -20,5 +21,5 @@ new Vue({
   data: {
     switzer: './static/img/switzerland.jpg'
   },
-  components: {HeaderItem, FooterItem}
+  components: {HeaderItem, FooterItem, Service}
 })

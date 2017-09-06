@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="border-bottom:1px solid #eee;background:#fff;">
     <div class="eyebrow">
       <div class="con">
         <a href="http://www.moyasz.com" target="_blank">莫亚科技旗下产品</a>
@@ -9,12 +9,16 @@
     <div class="menu">
       <div class="con">
         <div class="menu-items">
-          <a href="index.html">首页</a>
-          <a href="products.html">产品</a>
-          <a href="buy.html">购买</a>
-          <a href="help.html">帮助</a>
-          <a href="about.html">关于我们</a>
-          <a href="test.html">测试</a>
+
+          <div v-for="(item,index) in items" :key="index" class="item-wrap" :id="item.name"
+               @mouseenter="showSub($event)" @mouseleave="moveout">
+            <a :href="item.link" :class="{active:activemenu==item.name}"
+            >{{item.title}}</a>
+            <div class="sub-menu" v-show="currentItem=='products'">
+              <a v-for="(sub,index) in item.sub" :key="index" href="">{{sub.title}}</a>
+            </div>
+          </div>
+
         </div>
         <a href="index.html" target="_self" id="a-logo">
           <img :src="logoUrl">
@@ -33,9 +37,37 @@
 <script>
   export default {
     name: 'header',
+    props: ['activemenu'],
     data () {
       return {
-        logoUrl: './static/img/smtlogo.jpg'
+        currentItem: '',
+        logoUrl: './static/img/smtlogo.jpg',
+        items: [
+          {name: 'index', title: '首页', link: 'index.html', sub: []},
+          {
+            name: 'products',
+            title: '产品',
+            link: 'products.html',
+            sub: [
+              {title: '云订货平台', link: ''},
+              {title: '云进销存', link: ''},
+              {title: '建材家具厂家版', link: ''},
+              {title: '建材家具门店版', link: ''}
+            ]
+          },
+          {name: 'buy', title: '购买', link: 'buy.html', sub: []},
+          {name: 'help', title: '帮助', link: 'help.html', sub: []},
+          {name: 'about', title: '关于我们', link: 'about.html', sub: []}
+        ]
+      }
+    },
+    methods: {
+      showSub: function (e) {
+        this.currentItem = e.target.id
+        console.log(this.currentItem)
+      },
+      moveout: function () {
+        this.currentItem = ''
       }
     }
   }
@@ -52,11 +84,26 @@
     .con {
       height: 30px;
     }
+
+  }
+
+  .item-wrap {
+    display: inline-block;
+    position: relative;
     a {
       font-size: inherit;
       line-height: 30px;
     }
 
+    /*.sub-menu {*/
+      /*position: absolute;*/
+      /*left: 0;*/
+      /*top: 60px;*/
+    /*}*/
+  }
+
+  .active {
+    color: $smtred;
   }
 
   .phone {
@@ -66,7 +113,7 @@
   }
 
   .menu {
-    height: 90px;
+    height: 60px;
     .con {
       position: relative;
     }
@@ -78,19 +125,44 @@
 
   .menu-items {
     text-align: center;
-    height: 90px;
-    line-height: 90px;
-    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
     a {
       display: inline-block;
       margin: 0 15px;
     }
   }
 
+  .sub-menu {
+    width: 150px;
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: -5px;
+    font-size: 0;
+    line-height: 0;
+    a {
+      display: block;
+      color: #666;
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+      line-height: 40px;
+      text-align: left;
+      padding-left: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    a:hover
+    {
+      color: $smtred;
+    }
+  }
+
   #a-logo {
     position: absolute;
     left: 0;
-    top: 15px;
+    top: 10px;
   }
 
   .log-items {
@@ -99,11 +171,11 @@
     top: 0;
     height: 90px;
     a {
-      font-size: 16px;
+      font-size: 14px;
       margin: 0 5px;
       height: 30px;
       line-height: 30px;
-      margin-top: 30px;
+      margin-top: 15px;
     }
 
     .a-btn {

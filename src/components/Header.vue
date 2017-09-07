@@ -2,8 +2,8 @@
   <div style="border-bottom:1px solid #eee;background:#fff;">
     <div class="eyebrow">
       <div class="con">
-        <a href="http://www.moyasz.com" target="_blank">莫亚科技旗下产品</a>
-        <span class="phone"><i class="iconfont">&#xe682;</i>咨询电话: 0731-8556 3963</span>
+        <a href="http://www.moyasz.com" target="_blank" style="margin-right:20px;">莫亚科技旗下产品</a>
+        <span class="phone"><i class="iconfont" style="line-height:30px;vertical-align: bottom;margin-right:5px;">&#xe682;</i>咨询电话: 0755-8657 5595</span>
       </div>
     </div>
     <div class="menu">

@@ -12,6 +12,8 @@ import 'iview/dist/styles/iview.css'
 import Service from '../../components/Service.vue'
 import Crsl from './Crsl.vue'
 import '../../../static/normal.css'
+import SecLeft from '../../components/SecLeft.vue'
+import SecRight from '../../components/SecRight.vue'
 
 Vue.use(iView)
 
@@ -21,7 +23,35 @@ Vue.use(iView)
 new Vue({
   el: '#app',
   data: {
-    switzer: './static/img/switzerland.jpg'
+    switzer: './static/img/switzerland.jpg',
+    secinfo: {
+      title: '解决传统加工企业8大难题',
+      subtitle: '',
+      captitle: '拥抱变革',
+      caption: '在互联网和云计算的浪潮下，传统企业要想突围，必须主动迎接变化，进行自我革新',
+      btn: '',
+      imgurl: './static/img/mac.png',
+      push: 0
+    },
+    secinfo2: {
+      title: '',
+      subtitle: '',
+      captitle: '拥抱变革',
+      caption: '在互联网和云计算的浪潮下，传统企业要想突围，必须主动迎接变化，进行自我革新',
+      btn: '了解详情',
+      imgurl: './static/img/trend.jpg',
+      push: 12
+    },
+    secinfo3: {
+      title: '',
+      subtitle: '',
+      captitle: '拥抱变革',
+      caption: '在互联网和云计算的浪潮下，传统企业要想突围，必须主动迎接变化，进行自我革新',
+      btn: '了解详情',
+      imgurl: './static/img/air-iphone.png',
+      push: 12
+    }
+
   },
-  components: {HeaderItem, FooterItem, Service, Crsl}
+  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight}
 })

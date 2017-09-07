@@ -14,6 +14,7 @@ import Crsl from './Crsl.vue'
 import '../../../static/normal.css'
 import SecLeft from '../../components/SecLeft.vue'
 import SecRight from '../../components/SecRight.vue'
+import Banner from '../../components/Banner.vue'
 
 Vue.use(iView)
 
@@ -50,8 +51,9 @@ new Vue({
       btn: '了解详情',
       imgurl: './static/img/air-iphone.png',
       push: 12
-    }
+    },
+    bannerinfo: {title: 'banner', imgurl: './static/img/banner-cloud.jpg', txtalign: ''}
 
   },
-  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight}
+  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight, Banner}
 })

@@ -1,0 +1,55 @@
+<template>
+  <div class="main">
+    <img :src="info.imgurl" alt=""/>
+    <div class="con">
+      <h1 class="title" :class="{txtcenter:info.txtalign=='center'}">{{info.title}}</h1>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'banner',
+    props: ['info'],
+    data () {
+      return {}
+    }
+  }
+</script>
+
+<style lang='scss' scoped>
+  @import "../../static/common";
+
+  .main {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .con {
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+  }
+
+  .title {
+    line-height: 320px;
+    color: $smtred;
+  }
+
+  .txtcenter {
+    text-align: center;
+  }
+</style>

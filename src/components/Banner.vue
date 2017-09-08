@@ -46,7 +46,7 @@
 
   .title {
     line-height: 320px;
-    color: $smtred;
+    color: #fff;
   }
 
   .txtcenter {

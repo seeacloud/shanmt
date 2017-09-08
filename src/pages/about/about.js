@@ -10,8 +10,9 @@ import '../../../static/iconfont/iconfont.css'
 import SmtIntro from './SmtIntro.vue'
 import '../../../static/normal.css'
 import Dev from './Dev.vue'
-import Service from './Service.vue'
+import Serve from './Serve.vue'
 import Contact from './Contact'
+import Service from '../../components/Service.vue'
 
 Vue.use(iView)
 Vue.use(VueRouter)
@@ -19,7 +20,7 @@ Vue.use(VueRouter)
 const routes = [
   {path: '/intro', name: 'intro', component: SmtIntro},
   {path: '/dev', name: 'dev', component: Dev},
-  {path: '/service', name: 'service', component: Service},
+  {path: '/service', name: 'service', component: Serve},
   {path: '/contact', name: 'contact', component: Contact}
 ]
 
@@ -41,5 +42,5 @@ new Vue({
     ],
     initial: 'intro'
   },
-  components: {HeaderItem, FooterItem, SideMenu, Banner, SmtIntro, Dev, Service, Contact}
+  components: {HeaderItem, FooterItem, SideMenu, Banner, SmtIntro, Dev, Service, Contact, Serve}
 })

@@ -41,7 +41,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    z-index: 10;
+    z-index: 1;
   }
 
   .title {

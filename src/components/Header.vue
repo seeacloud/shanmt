@@ -1,5 +1,5 @@
 <template>
-  <div style="border-bottom:1px solid #eee;background:#fff;">
+  <div style="background:#ffffff;border-bottom:1px solid #eee;">
     <div class="eyebrow">
       <div class="con">
         <a href="http://www.moyasz.com" target="_blank" style="margin-right:20px;">莫亚科技旗下产品</a>
@@ -56,6 +56,7 @@
             ]
           },
           {name: 'buy', title: '购买', link: 'buy.html', sub: []},
+          {name: 'join', title: '合作', link: 'join.html', sub: []},
           {name: 'help', title: '帮助', link: 'help.html', sub: []},
           {name: 'about', title: '关于我们', link: 'about.html#/intro', sub: []}
         ]
@@ -67,6 +68,7 @@
         console.log(this.currentItem)
       },
       moveout: function () {
+        console.log('move out')
         this.currentItem = ''
       }
     }
@@ -81,14 +83,12 @@
     border-bottom: 1px solid #eeeeee;
     height: 30px;
     font-size: 12px;
-    min-width:1180px;
+    min-width: 1180px;
     .con {
       height: 30px;
     }
 
   }
-
-
 
   .active {
     color: $smtred;
@@ -103,7 +103,7 @@
   .menu {
     height: 60px;
     width: 100%;
-    min-width:1180px;
+    min-width: 1180px;
     display: block;
     .con {
       position: relative;
@@ -133,9 +133,8 @@
   }
 
   @media screen and(min-width: 1650px) {
-    .menu-items{
-      a
-      {
+    .menu-items {
+      a {
         font-size: 18px;
       }
     }
@@ -146,24 +145,23 @@
     width: 150px;
     background: #ffffff;
     position: absolute;
-    z-index: 10;
+    z-index: 999;
     top: 60px;
     left: -5px;
     font-size: 0;
     line-height: 0;
     a {
       display: block;
-      color: #666;
+      color: #666666;
       font-size: 12px;
       margin: 0;
       padding: 0;
       line-height: 40px;
       text-align: left;
       padding-left: 15px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #eeeeee;
     }
-    a:hover
-    {
+    a:hover {
       color: $smtred;
     }
   }

@@ -35,8 +35,8 @@ new Vue({
   data: {
     bannerinfo: {title: '关于山木通', imgurl: './static/img/banner-cloud.jpg', txtalign: ''},
     links: [
-      {title: '选择山木通', url: '/intro', name: 'intro'},
-      {title: '发展历程', url: '/dev', name: 'dev'},
+      {title: '山木通简介', url: '/intro', name: 'intro'},
+      // {title: '发展历程', url: '/dev', name: 'dev'},
       {title: '服务保障', url: '/service', name: 'service'},
       {title: '联系我们', url: '/contact', name: 'contact'}
     ],

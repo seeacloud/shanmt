@@ -15,6 +15,7 @@ import '../../../static/normal.css'
 import SecLeft from '../../components/SecLeft.vue'
 import SecRight from '../../components/SecRight.vue'
 import Banner from '../../components/Banner.vue'
+import ProdIntro from './ProdIntro.vue'
 
 Vue.use(iView)
 
@@ -55,5 +56,5 @@ new Vue({
     bannerinfo: {title: 'banner', imgurl: './static/img/banner-cloud.jpg', txtalign: ''}
 
   },
-  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight, Banner}
+  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight, Banner, ProdIntro}
 })

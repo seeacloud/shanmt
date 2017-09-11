@@ -14,21 +14,23 @@
 
   <div style="background:#ffffff;">
     <div class="con">
-      <Row :gutter="30">
-        <i-col span="5">
-          <side-menu :links="links" style="margin-top:80px;"></side-menu>
-        </i-col>
+      <Row :gutter="30" style="margin-bottom:50px;">
+          <i-col span="5">
+            <side-menu :links="links" style="margin-top:80px;"></side-menu>
+          </i-col>
 
-        <i-col span="19">
-          <div style="margin-top:80px;">
-            <router-view></router-view>
-          </div>
-        </i-col>
+          <i-col span="19">
+            <div style="margin-top:80px;">
+              <router-view></router-view>
+            </div>
+          </i-col>
       </Row>
+      <div class="gradient-bdr"> </div>
 
       <service></service>
     </div>
   </div>
+
 
   <footer-item></footer-item>
 </div>

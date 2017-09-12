@@ -1,32 +1,54 @@
 $font: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-$smtred:#a9263f;
-$blue:#2196F3;
-$lightblue:#64B5F6;
+$smtred: #a9263f;
+$blue: #2196f3;
+$lightblue: #64b5f6;
 
-
-body, h1, h2, h3, h4, h5,h6, p, div, span, a, ul, li, table, th, td, tr{
+body, h1, h2, h3, h4, h5, h6, p, div, span, a, ul, li, table, th, td, tr {
   font-family: $font;
 }
 
-#app
-{
-  min-width:1180px;
-}
-body
-{
-  background: #eee;
-  min-width:1180px;
-}
-a
-{
-  text-decoration: none;
-  color: #333;
+#app {
+  min-width: 1180px;
 }
 
-a:hover
-{
+body {
+  background: #eeeeee;
+  min-width: 1180px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
   color: $smtred;
 }
+
+
+.sec {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 0;
+}
+
+.sec:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 1px;
+  //background: red;
+  background: -webkit-linear-gradient(left, #ffffff, #dddddd, #ffffff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ffffff, #dddddd, #ffffff); /* 标准的语法（必须放在最后） */
+}
+
+
 .con {
   display: block;
   width: 65%;
@@ -34,8 +56,19 @@ a:hover
   min-width: 1180px !important;
 }
 
-h1,h2,h3,h4,h5,h6
-{
+.title-con {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  h1 {
+    color: $smtred;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
@@ -70,51 +103,47 @@ p {
   margin: 15px 0;
 }
 
-.center{
+.center {
   text-align: center;
 }
-.normal
-{
+
+.normal {
   font-weight: normal;
 }
 
-.smt-btn-fill
-{
+.smt-btn-fill {
   display: inline-block;
   background: $blue;
-  color: #fff;
+  color: #ffffff;
   height: 30px;
   line-height: 30px;
   padding: 0 15px;
   border-radius: 15px;
   margin: 15px 0;
-}
-.smt-btn-fill:hover
-{
-  background: $lightblue;
-  color: #fff;
 }
 
-.smt-btn-white
-{
+.smt-btn-fill:hover {
+  background: $lightblue;
+  color: #ffffff;
+}
+
+.smt-btn-white {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   height: 30px;
   line-height: 30px;
   padding: 0 15px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 15px;
   margin: 15px 0;
 }
-.smt-btn-white:hover
-{
-  background: #fff;
+
+.smt-btn-white:hover {
+  background: #ffffff;
   color: $blue;
 }
 
-
-.gradient-bdr
-{
+.gradient-bdr {
   position: relative;
 }
 

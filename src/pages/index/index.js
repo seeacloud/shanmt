@@ -16,7 +16,11 @@ import SecLeft from '../../components/SecLeft.vue'
 import SecRight from '../../components/SecRight.vue'
 import Banner from '../../components/Banner.vue'
 import ProdIntro from './ProdIntro.vue'
+import Improve from './Improve.vue'
+import Brands from '../../components/Brands.vue'
+import Router from 'vue-router'
 
+Vue.use(Router)
 Vue.use(iView)
 
 // Vue.config.productionTip = false
@@ -56,5 +60,5 @@ new Vue({
     bannerinfo: {title: 'banner', imgurl: './static/img/banner-cloud.jpg', txtalign: ''}
 
   },
-  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight, Banner, ProdIntro}
+  components: {HeaderItem, FooterItem, Service, Crsl, SecLeft, SecRight, Banner, ProdIntro, Improve, Brands}
 })

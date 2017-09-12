@@ -1,5 +1,5 @@
 <template>
-  <div style="background:#ffffff;border-bottom:1px solid #eee;">
+  <div style="background:#ffffff;border-bottom:1px solid #eeeeee;">
     <div class="eyebrow">
       <div class="con">
         <a href="http://www.moyasz.com" target="_blank" style="margin-right:20px;">莫亚科技旗下产品</a>
@@ -11,11 +11,11 @@
         <div class="menu-items">
 
           <div v-for="(item,index) in items" :key="index" class="item-wrap" :id="item.name"
-               @mouseenter="showSub($event)" @mouseleave="moveout">
+               @mouseenter="showSub($event)" @mouseleave="moveout" @click="moveout">
             <a :href="item.link" :class="{active:activemenu==item.name}"
             >{{item.title}}</a>
             <div class="sub-menu" v-show="currentItem=='products'">
-              <a v-for="(sub,index) in item.sub" :key="index" href="">{{sub.title}}</a>
+              <a v-for="(sub,index) in item.sub" :key="index" :href="sub.link">{{sub.title}}</a>
             </div>
           </div>
 
@@ -24,7 +24,7 @@
           <img :src="logoUrl">
         </a>
         <div class="log-items">
-          <a href="" class="a-btn">立即体验</a>
+          <a href="" class="a-btn">免费试用</a>
           <a href="">登录</a>
           <a href="">注册</a>
         </div>
@@ -35,6 +35,11 @@
 </template>
 
 <script>
+  import Router from 'vue-router'
+  import Vue from 'vue'
+
+  Vue.use(Router)
+
   export default {
     name: 'header',
     props: ['activemenu'],
@@ -47,12 +52,12 @@
           {
             name: 'products',
             title: '产品',
-            link: 'products.html',
+            link: 'products.html#/smtm',
             sub: [
-              {title: '云订货平台', link: ''},
-              {title: '云进销存', link: ''},
-              {title: '建材家具厂家版', link: ''},
-              {title: '建材家具门店版', link: ''}
+              {title: '云订货平台', link: 'products.html#/order'},
+              {title: '云进销存', link: 'products.html#/jxc'},
+              {title: '建材家具厂家版', link: 'products.html#/smtm'},
+              {title: '建材家具门店版', link: 'products.html#/smtagent'}
             ]
           },
           {name: 'buy', title: '购买', link: 'buy.html', sub: []},

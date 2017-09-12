@@ -5,23 +5,36 @@
         <h1 class="sec-title">山木通 让管理更轻松</h1>
         <h5 class="sub-title">山木通运用国际先进的互联网、云计算、大数据等技术，结合高品质的客户服务，已为多家企业提供了企业运营与管理完整的互联网解决方案。</h5>
       </div>
-      <Row>
-        <Col span="6">
-        asa
-        </Col>
-        <Col span="6">
-        </Col>
-        <Col span="6">
-        </Col>
-        <Col span="6">
-        xxx
+      <Row style="margin-top:40px;">
+        <Col v-for="(item,index) in icons" :key="index" span="6">
+        <div class="card" id="icon-smt-m" @mouseenter="changeBan(item.name)">
+          <i class="iconfont" v-html="item.iconcode"></i>
+          <h5>{{item.title}}</h5>
+        </div>
         </Col>
       </Row>
-
-
     </div>
 
-    <div style="background:#dddddd;">xxx</div>
+    <div v-for="(item,index) in banners" :key="index" v-show="active==item.name"
+         :style="{background:item.bgimg}">
+      <div class="con">
+        <Row>
+          <Col span="12">
+          <h4 class="ban-title">{{item.title}}</h4>
+          <h6 v-for="(info, index) in item.infoarr" :key="index" class="ban-spec">
+            {{info.des}}
+          </h6>
+
+          <a :href="item.link" class="smt-btn-fill">{{item.linkname}}</a>
+          <!--<a href="" class="smt-btn-fill">免费试用</a>-->
+          </Col>
+          <Col span="12" class="col-r">
+          <img :src="item.imgurl" alt=""/>
+          <span>{{item.imgdes}}</span>
+          </Col>
+        </Row>
+      </div>
+    </div>
   </div>
 
 </template>
@@ -30,7 +43,78 @@
   export default {
     name: 'prodintro',
     data () {
-      return {}
+      return {
+        active: 'smt-m',
+        icons: [
+          {title: '建材家具厂家版', iconcode: '&#xe624;', name: 'smt-m'},
+          {title: '建材家具门店版', iconcode: '&#xe601;', name: 'smt-agent'},
+          {title: '云订货平台', iconcode: '&#xe600;', name: 'smt-order'},
+          {title: '云进销存', iconcode: '&#xe652;', name: 'smt-jxc'}
+        ],
+        banners: [
+          {
+            title: '山木通·建材家具厂家版',
+            name: 'smt-m',
+            infoarr: [
+              {des: '·针对家具建材行业的特点进行优化，量身打造适合家具建材厂家的功能'},
+              {des: '·家具建材企业全流程管控'},
+              {des: '·跨平台，支持移动办公'}
+            ],
+            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            link: 'buy.html',
+            linkname: '立即购买',
+            imgurl: './static/img/app.jpg',
+            imgdes: '扫码下载山木通APP'
+          },
+          {
+            title: '山木通·建材家具门店版',
+            name: 'smt-agent',
+            infoarr: [
+              {des: '·'},
+              {des: '·'},
+              {des: '·'}
+            ],
+            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            link: 'buy.html',
+            linkname: '立即购买',
+            imgurl: './static/img/app.jpg',
+            imgdes: '扫码下载山木通APP'
+          },
+          {
+            title: '山木通·云订货平台',
+            name: 'smt-order',
+            infoarr: [
+              {des: '·'},
+              {des: '·'},
+              {des: '·'}
+            ],
+            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            link: 'buy.html',
+            linkname: '立即购买',
+            imgurl: './static/img/app.jpg',
+            imgdes: '扫码下载山木通APP'
+          },
+          {
+            title: '山木通·云进销存',
+            name: 'smt-jxc',
+            infoarr: [
+              {des: '·'},
+              {des: '·'},
+              {des: '·'}
+            ],
+            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            link: 'buy.html',
+            linkname: '立即购买',
+            imgurl: './static/img/app.jpg',
+            imgdes: '扫码下载山木通APP'
+          }
+        ]
+      }
+    },
+    methods: {
+      changeBan: function (name) {
+        this.active = name
+      }
     }
   }
 </script>
@@ -39,7 +123,7 @@
   @import "../../../static/common";
 
   .con {
-    background: #ffffff;
+    /*background: #ffffff;*/
     padding: 40px 0;
   }
 
@@ -53,4 +137,74 @@
     color: $smtred;
   }
 
+  .card {
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .card:after {
+    position: absolute;
+    display: none;
+    content: '';
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .iconfont {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 60px;
+    border: 2px solid $smtred;
+    text-align: center;
+    line-height: 120px;
+    color: $smtred;
+    margin-bottom: 20px;
+  }
+
+  .card:hover {
+    background: $smtred;
+    color: #ffffff;
+    .iconfont {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+  }
+
+  .card:hover:after {
+    display: block;
+    border-top: 10px solid $smtred;
+  }
+
+  #smt-m {
+    background: url(../../../static/img/banner-cloud.jpg) no-repeat center;
+  }
+
+  .col-r {
+    text-align: center;
+    img {
+    }
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .ban-title {
+    margin-bottom: 20px;
+  }
+
+  .ban-spec {
+    line-height: 30px;
+  }
 </style>

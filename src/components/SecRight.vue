@@ -16,7 +16,7 @@
             <h5>
               {{info.caption}}
             </h5>
-            <a href="" class="smt-btn-fill">{{info.btn}}</a>
+            <a href="" class="smt-btn-fill" v-show="info.btn!=''">{{info.btn}}</a>
           </td>
         </tr>
       </table>

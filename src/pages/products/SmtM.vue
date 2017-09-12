@@ -5,9 +5,11 @@
     <!--<h1>解决企业8大难题</h1>-->
     <!--</div>-->
     <!--</div>-->
+    <sec-left :info="sechead" style="background:url(../../static/img/banner-cloud.jpg) no-repeat center "></sec-left>
+
 
     <sec-left :info="secinfo"></sec-left>
-    <sec-right :info="secinfo"></sec-right>
+    <sec-right :info="secinfo2"></sec-right>
   </div>
 </template>
 
@@ -18,14 +20,22 @@
     name: 'smtm',
     data () {
       return {
+        sechead: {title: '', captitle: '建材家具厂家版', caption: 'xxx', btn: '立即购买'},
         secinfo: {
           title: '解决传统加工企业8大难题',
+          subtitle: '',
+          captitle: '破解企业困境',
+          caption: '传统加工企业面临订货效率低、订单追踪难、管控不全面、客户粘度低、收款对账难、业绩增长慢、生产监控难和库存盘点难等问题',
+          btn: '',
+          imgurl: './static/img/mac.png'
+        },
+        secinfo2: {
+          title: '为企业创造6大价值',
           subtitle: '',
           captitle: '拥抱变革',
           caption: '在互联网和云计算的浪潮下，传统企业要想突围，必须主动迎接变化，进行自我革新',
           btn: '',
-          imgurl: './static/img/mac.png',
-          push: 0
+          imgurl: './static/img/trend.jpg'
         }
       }
     },

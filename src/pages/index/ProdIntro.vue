@@ -60,7 +60,7 @@
               {des: '·家具建材企业全流程管控'},
               {des: '·跨平台，支持移动办公'}
             ],
-            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            bgimg: 'url(' + require('../../../static/img/smt-m-banner.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
             imgurl: './static/img/app.jpg',

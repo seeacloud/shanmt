@@ -61,7 +61,7 @@
             ]
           },
           {name: 'buy', title: '购买', link: 'buy.html', sub: []},
-          {name: 'join', title: '合作', link: 'join.html', sub: []},
+//          {name: 'join', title: '合作', link: 'join.html', sub: []},
           {name: 'help', title: '帮助', link: 'help.html', sub: []},
           {name: 'about', title: '关于我们', link: 'about.html#/intro', sub: []}
         ]

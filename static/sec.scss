@@ -1,12 +1,12 @@
 @import "../../static/common";
 
-.main {
+.sec {
   position: relative;
   background: #ffffff;
-  padding: 30px 0;
+  font-size: 0;
 }
 
-.main:after {
+.sec:after {
   position: absolute;
   content: '';
   display: block;
@@ -27,6 +27,7 @@
 .sec-title {
   text-align: center;
   color: $smtred;
+  padding-top: 40px;
 }
 
 .sub-title {
@@ -42,8 +43,8 @@ td {
 }
 
 .img-sec {
-  width: 60%;
-  margin-left: 20%;
+  width: 80%;
+  margin-left: 10%;
   height: auto;
 }
 

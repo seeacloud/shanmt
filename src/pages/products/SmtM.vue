@@ -31,7 +31,7 @@
     name: 'smtm',
     data () {
       return {
-        headinfo: {title: '山木通建材家具厂家版', subtitle: '企业运营与管理完整的互联网解决方案', codeurl: './static/img/app.jpg', btn: '立即购买'},
+        headinfo: {title: '山木通 • 建材家具厂家版', subtitle: '企业运营与管理完整的互联网解决方案', codeurl: './static/img/app.jpg', btn: '立即购买'},
         secinfo: {
           title: '为建材家具企业量身定做',
           subtitle: '山木通团队结合多年的行业管理经验，充分考虑企业的特点，为家具、家居、建材、木业加工生产企业量身定制。',
@@ -77,7 +77,7 @@
           imgurl: './static/img/iphone-produce.jpg'
         },
         cards: [
-          {title: '产品管理', des: '直观的产品展示，电脑、手机的应用，随时随地和客户分享', iconcode: '602;'},
+          {title: '产品管理', des: '直观的产品展示，电脑、手机的应用，随时随地和客户分享', iconcode: '856;'},
           {title: '订货管理', des: '强大的订单管理中心，全流程的订单跟踪展示，让客户、厂家及时了解订单情况', iconcode: '608;'},
           {title: '库存管理', des: '通过库存管理功能进行产品的入库、出库、盘点、库存状况查询', iconcode: '613;'},
           {title: '生产管理', des: '生产全流程监控，让客户及时掌握订单生产状态，做到心中有数', iconcode: '662;'},

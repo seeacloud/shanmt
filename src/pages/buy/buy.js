@@ -15,7 +15,7 @@ Vue.use(iView)
 new Vue({
   el: '#app',
   data: {
-    bannerinfo: {title: '山木通报价体系', imgurl: './static/img/banner-cloud.jpg', txtalign: ''},
+    bannerinfo: {title: '山木通报价体系', imgurl: './static/img/girls.jpg', txtalign: ''},
     info1: {
       bg: '#F5A623',
       title: '建材家具厂家版',

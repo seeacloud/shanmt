@@ -56,9 +56,9 @@
             title: '山木通·建材家具厂家版',
             name: 'smt-m',
             infoarr: [
-              {des: '·针对家具建材行业的特点进行优化，量身打造适合家具建材厂家的功能'},
-              {des: '·家具建材企业全流程管控'},
-              {des: '·跨平台，支持移动办公'}
+              {des: '● 针对家具建材行业的特点进行优化，量身打造适合家具建材厂家的功能'},
+              {des: '● 家具建材企业全流程管控'},
+              {des: '● 跨平台，支持移动办公'}
             ],
             bgimg: 'url(' + require('../../../static/img/smt-m-banner.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
@@ -70,11 +70,11 @@
             title: '山木通·建材家具门店版',
             name: 'smt-agent',
             infoarr: [
-              {des: '·'},
-              {des: '·'},
-              {des: '·'}
+              {des: '● 8大实用功能，门店管理好帮手'},
+              {des: '● 领先的SaaS平台，数据云端备份，客户资料永不丢失'},
+              {des: '● 支持移动办公，生意从不掉线'}
             ],
-            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            bgimg: 'url(' + require('../../../static/img/mac2.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
             imgurl: './static/img/app.jpg',
@@ -84,11 +84,11 @@
             title: '山木通·云订货平台',
             name: 'smt-order',
             infoarr: [
-              {des: '·'},
-              {des: '·'},
-              {des: '·'}
+              {des: '● 专为中小型商贸/服务/零售企业量身打造的，基于大数据和云计算应用的订货系统。'},
+              {des: '● 满足电商多平台多店铺多仓库经营特性，并提供系统、业务及全链路监控系统'},
+              {des: '● 多元化的会员促销及营销体系，帮助企业提升业绩，突破营销瓶颈'}
             ],
-            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            bgimg: 'url(' + require('../../../static/img/clouds.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
             imgurl: './static/img/app.jpg',
@@ -98,9 +98,9 @@
             title: '山木通·云进销存',
             name: 'smt-jxc',
             infoarr: [
-              {des: '·'},
-              {des: '·'},
-              {des: '·'}
+              {des: '● 支持行业拓展，满足不同行业需求'},
+              {des: '● 电脑端、手机端、微信端、APP多端通用，数据实时同步'},
+              {des: '● 一键成本重算，解决多批次产品库存成本不同的问题'}
             ],
             bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
@@ -124,7 +124,7 @@
 
   .con {
     /*background: #ffffff;*/
-    padding: 40px 0;
+    padding: 60px 0;
   }
 
   .sec-head {
@@ -206,5 +206,10 @@
 
   .ban-spec {
     line-height: 30px;
+  }
+
+  h4
+  {
+    color: #000000;
   }
 </style>

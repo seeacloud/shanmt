@@ -16,7 +16,7 @@ Vue.use(iView)
 new Vue({
   el: '#app',
   data: {
-    bannerinfo: {title: '山木通帮助中心', imgurl: './static/img/mac-desk.jpg', txtalign: 'center'}
+    bannerinfo: {title: '山木通帮助中心', imgurl: './static/img/macgirl.jpg', txtalign: 'center'}
   },
   components: {HeaderItem, Banner, SearchBar, HelpItem, FooterItem, Service}
 })

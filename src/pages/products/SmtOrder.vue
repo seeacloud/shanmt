@@ -37,7 +37,8 @@
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/sky.jpg') + ')' + 'no-repeat center',
-          mainimg: './static/img/maciphonefront.png'
+          mainimg: '',
+          fontcolor: 'white'
         },
         secinfo: {
           title: '门店老板的好帮手',

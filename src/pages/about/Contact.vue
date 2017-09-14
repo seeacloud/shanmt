@@ -72,7 +72,7 @@
   .inner {
     width: 90%;
     margin-left: 5%;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 60px;
   }
 

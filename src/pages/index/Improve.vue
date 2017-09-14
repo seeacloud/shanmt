@@ -43,6 +43,10 @@
 
 <style lang='scss' scoped>
   @import "../../../static/common";
+  .con
+  {
+    padding: 50px 0;
+  }
 
   .card {
     height: 320px;

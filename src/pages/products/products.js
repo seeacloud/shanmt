@@ -10,11 +10,16 @@ import Service from '../../components/Service.vue'
 import FooterItem from '../../components/Footer.vue'
 import '../../../static/iconfont/iconfont.css'
 
+import SmtOrder from './SmtOrder.vue'
+import SmtJxc from './SmtJxc.vue'
+
 Vue.use(Router)
 Vue.use(iView)
 
 const routes = [
   {path: '/smtm', component: SmtM},
+  {path: '/order', component: SmtOrder},
+  {path: '/jxc', component: SmtJxc},
   {path: '/smtagent', component: SmtAgent}
 ]
 

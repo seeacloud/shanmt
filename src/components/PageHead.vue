@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :style="{background:info.bgimg}">
     <div class="con">
       <table>
         <tr>
@@ -15,6 +15,7 @@
             <a href="buy.html" class="smt-btn-fill">立即购买</a>
           </td>
           <td>
+            <img :src="info.mainimg" alt=""/>
           </td>
         </tr>
       </table>
@@ -37,7 +38,7 @@
   @import '../../static/common';
   .container
   {
-    background: url(../../static/img/smt-m-banner.jpg) no-repeat center;
+    /*background: url(../../static/img/store.jpg) no-repeat center;*/
     height: 400px;
     color: #333;
   }
@@ -63,6 +64,11 @@
   {
     width: 50%;
     vertical-align: middle;
+    img
+    {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .code-img

@@ -37,7 +37,7 @@ new Vue({
     links: [
       {title: '山木通简介', url: '/intro', name: 'intro'},
       // {title: '发展历程', url: '/dev', name: 'dev'},
-      {title: '服务保障', url: '/service', name: 'service'},
+      // {title: '服务保障', url: '/service', name: 'service'},
       {title: '联系我们', url: '/contact', name: 'contact'}
     ],
     initial: 'intro'

@@ -28,13 +28,18 @@
         items: [
           {des: '业务流程的效率提高了很多，业绩增长35%，山木通很好用，很实用', name: '汉瑞木业总经理 戴先军', imgurl: './static/img/back.png', typeB: false},
           {
-            des: '业务流程的效率提高了很多，业绩增长35%，山木通很好用，很实用',
-            name: '汉瑞木业总经理 戴先军',
+            des: '山木通有效的将我们与客户关联企业，通过山木通平 台进行沟通互动，提高了各环节的沟通效率。',
+            name: '冠湘木业 王厂长',
             imgurl: './static/img/discuss.png',
             typeB: true
           },
-          {des: '业务流程的效率提高了很多，业绩增长35%，山木通很好用，很实用', name: '汉瑞木业总经理 戴先军', imgurl: './static/img/back.png', typeB: false},
-          {des: '业务流程的效率提高了很多，业绩增长35%，山木通很好用，很实用', name: '汉瑞木业总经理 戴先军', imgurl: './static/img/discuss.png', typeB: true}
+          {
+            des: '使用山木通手机APP，代理商和厂家管理人员能够真实的感受到互联网技术带来的方便，自从上了山木通平台后，不少代理商客户主动上门来合作了',
+            name: '森林木业 信息总监',
+            imgurl: './static/img/man.jpg',
+            typeB: false
+          },
+          {des: '山木通的SaaS平台稳定可靠，系统智能化程度高，为我们的管理带来很多便利。', name: '腾达陶瓷 李经理', imgurl: './static/img/officetalk.jpg', typeB: true}
         ]
       }
     }
@@ -43,8 +48,8 @@
 
 <style lang='scss' scoped>
   @import "../../../static/common";
-  .con
-  {
+
+  .con {
     padding: 50px 0;
   }
 
@@ -54,7 +59,7 @@
     overflow: hidden;
     position: relative;
     background: #ffffff;
-    border: 1px solid #eee;
+    border: 1px solid #eeeeee;
     img {
       width: 100%;
     }
@@ -85,16 +90,16 @@
     .caption {
       top: auto;
       bottom: 20px;
-      color: #333;
-      -webkit-transform: translate(0,0);
-      -moz-transform: translate(0,0);
-      -ms-transform: translate(0,0);
-      -o-transform: translate(0,0);
-      transform: translate(0,0);
+      color: #333333;
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
     }
   }
-  .title-con
-  {
+
+  .title-con {
     margin-bottom: 40px;
   }
 </style>

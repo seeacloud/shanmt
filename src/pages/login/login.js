@@ -26,7 +26,7 @@ new Vue({
   el: '#app',
   router,
   data: {
-    bannerinfo: {title: '用户注册/登录', imgurl: './static/img/laptopdesk.jpg', txtalign: ''}
+    bannerinfo: {title: '用户注册/登录', imgurl: './static/img/macwhite.jpg', txtalign: ''}
 
   },
   components: {HeaderItem, FooterItem, Banner, ContentSignup, ContentLogin}

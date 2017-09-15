@@ -45,8 +45,20 @@
   }
 
   .title {
-    line-height: 320px;
-    color: #fff;
+    color: #333;
+    margin-top: 120px;
+    display: inline-block;
+    position: relative;
+  }
+  .title:before
+  {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 40px;
+    background: $smtred;
+    left: 0;
+    top: -5px;
   }
 
   .txtcenter {

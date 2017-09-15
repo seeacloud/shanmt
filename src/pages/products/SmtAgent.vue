@@ -96,7 +96,10 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard}
+    components: {SecLeft, SecRight, PageHead, FuncCard},
+    mounted: function () {
+      window.scrollTo(0, 0)
+    }
   }
 </script>
 

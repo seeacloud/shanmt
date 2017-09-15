@@ -5,7 +5,7 @@
         <h1>做生意，就选山木通·云管理平台</h1>
         <h6>山木通运用国际先进的互联网、云计算、大数据等技术，结合高品质的客户服务，已为多家企业提供了企业运营与管理的整套互联网解决方案。</h6>
         <div style="text-align: center;">
-          <a href="" class="smt-btn-fill">立即购买</a>
+          <a href="buy.html" class="smt-btn-fill">立即购买</a>
         </div>
       </Row>
       <Row class="row">

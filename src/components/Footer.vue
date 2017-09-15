@@ -6,26 +6,26 @@
           <Col span="6">
           <h6 class="title">新手帮助</h6>
 
-          <a href="">如何使用</a>
-          <a href="">如何购买</a>
-          <a href="">如何支付</a>
-          <a href="">如何续费</a>
+          <a href="help.html">如何使用</a>
+          <a href="buy.html">如何购买</a>
+          <a href="help.html">如何开单</a>
+          <a href="help.html">如何订货</a>
           </Col>
 
           <Col span="6">
           <h6 class="title">山木通·云管理平台</h6>
-          <a href="">云订货平台</a>
-          <a href="">云进销存</a>
-          <a href="">建材家具厂家版</a>
-          <a href="">建材家具门店版</a>
+          <a href="products.html#/order">云订货平台</a>
+          <a href="products.html#/jxc">云进销存</a>
+          <a href="products.html#/smtm">建材家具厂家版</a>
+          <a href="products.html#/agent">建材家具门店版</a>
           </Col>
 
           <Col span="6">
           <h6 class="title">关于我们</h6>
-          <a href="">选择山木通</a>
-          <a href="">发展历程</a>
-          <a href="">服务保障</a>
-          <a href="">联系我们</a>
+          <a href="about.html#/intro">山木通简介</a>
+          <!--<a href="">发展历程</a>-->
+          <a href="about.html#/service">服务保障</a>
+          <a href="about.html#/contact">联系我们</a>
           </Col>
 
           <Col span="6">

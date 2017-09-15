@@ -102,7 +102,7 @@
               {des: '● 电脑端、手机端、微信端、APP多端通用，数据实时同步'},
               {des: '● 一键成本重算，解决多批次产品库存成本不同的问题'}
             ],
-            bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+            bgimg: 'url(' + require('../../../static/img/businesstop.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
             imgurl: './static/img/app.jpg',

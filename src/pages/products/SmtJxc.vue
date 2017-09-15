@@ -36,8 +36,8 @@
           subtitle: '门店老板的好帮手，门店管理更轻松',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
-          bgimg: 'url(' + require('../../../static/img/store.jpg') + ')' + 'no-repeat center',
-          mainimg: './static/img/maciphonefront.png'
+          bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+          mainimg: './static/img/imac.png'
         },
         secinfo: {
           title: '一站式生意管理工具',
@@ -98,7 +98,10 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard}
+    components: {SecLeft, SecRight, PageHead, FuncCard},
+    mounted: function () {
+      window.scrollTo(0, 0)
+    }
   }
 </script>
 

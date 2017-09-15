@@ -42,6 +42,21 @@
     border-radius: 50%;
     color: $blue;
   }
+  .card:hover
+  {
+    .iconfont
+    {
+      background: $blue;
+      color: #fff;
+    }
+  }
+
+  p
+  {
+    margin-top: 0;
+  }
+  
+
 
   .des-wrap
   {

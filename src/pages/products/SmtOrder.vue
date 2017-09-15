@@ -33,7 +33,7 @@
       return {
         headinfo: {
           title: '山木通 • 云订货平台',
-          subtitle: '门店老板的好帮手，门店管理更轻松',
+          subtitle: '智能、高效的订货管理系统',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/sky.jpg') + ')' + 'no-repeat center',
@@ -41,8 +41,8 @@
           fontcolor: 'white'
         },
         secinfo: {
-          title: '门店老板的好帮手',
-          subtitle: '电脑手机全支持，指尖上办公，让各环节工作从此化繁为简，是店铺可靠的智能伙伴',
+          title: '聪明的订货管理系统',
+          subtitle: '电脑手机全支持，指尖上办公，让各环节工作从此化繁为简，是您可靠的智能伙伴',
           captitle: '门店管理的多面手',
           captions: [
             {des: '山木通门店版可一键完成销售开单,厂家订货,即时生成应收款、应付款、毛利润等经营报表,库存智能管理,云端存储数据，十八般武艺，样样精通'}
@@ -97,7 +97,10 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard}
+    components: {SecLeft, SecRight, PageHead, FuncCard},
+    mounted: function () {
+      window.scrollTo(0, 0)
+    }
   }
 </script>
 

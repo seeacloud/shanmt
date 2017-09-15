@@ -33,7 +33,7 @@
       return {
         headinfo: {
           title: '山木通 • 建材家具厂家版',
-          subtitle: '企业运营与管理完整的互联网解决方案',
+          subtitle: '企业运营与管理完整的互联网解决方案，结合多年行业经验，转为建材家具企业量身打造',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/smt-m-banner.jpg') + ')' + 'no-repeat center'

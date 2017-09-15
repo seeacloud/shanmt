@@ -23,11 +23,11 @@
       return {
         brands: [
           {title: '', imgurl: './static/img/logo/hanrui.jpg'},
-          {title: '', imgurl: './static/img/logo/hanrui.jpg'},
-          {title: '', imgurl: './static/img/logo/hanrui.jpg'},
-          {title: '', imgurl: './static/img/logo/hanrui.jpg'},
-          {title: '', imgurl: './static/img/logo/hanrui.jpg'},
-          {title: '', imgurl: './static/img/logo/hanrui.jpg'}
+          {title: '', imgurl: './static/img/logo/kangming.jpg'},
+          {title: '', imgurl: './static/img/logo/senlin-p.jpg'},
+          {title: '', imgurl: './static/img/logo/jiaju.jpg'},
+          {title: '', imgurl: './static/img/logo/yuanyi.jpg'},
+          {title: '', imgurl: './static/img/logo/you.jpg'}
         ]
       }
     }

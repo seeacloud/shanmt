@@ -7,7 +7,8 @@
         </div>
         <div class="divsearch"><input type="text"> <i class="iconfont">&#xe600;</i></div>
         <div class="divnav">
-          <a v-for="(item, index) in items" :key="index" class="navitem" :href="item.link">
+          <a v-for="(item, index) in items" :key="index" class="navitem" :class="{activeitem:hotitem==item.title}"
+             :href="item.link">
             {{item.title}}
           </a>
         </div>
@@ -23,15 +24,16 @@
   Vue.use(Router)
 
   export default {
-    name: '',
+    name: 'header',
+    props: ['hotitem'],
     data () {
       return {
         items: [
-          {title: 'HOME', link: 'about.html'},
+          {title: 'HOME', link: 'index.html'},
           {title: 'ABOUT US', link: 'about.html'},
-          {title: 'PRODUCTS', link: 'about.html'},
-          {title: 'NEWS', link: 'about.html'},
-          {title: 'CONTACT US', link: 'about.html'}
+          {title: 'PRODUCTS', link: 'products.html'},
+          {title: 'NEWS', link: 'news.html'},
+          {title: 'CONTACT US', link: 'contact.html'}
         ]
       }
     }
@@ -69,8 +71,12 @@
     line-height: 70px;
     color: #333333;
   }
-  .navitem:hover
-  {
+
+  .activeitem {
+    color: $blue;
+  }
+
+  .navitem:hover {
     color: $blue;
   }
 

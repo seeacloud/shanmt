@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-top:60px;margin-bottom:60px;">
     <div class="con">
       <Row>
         <Col span="6" style="text-align: center;">

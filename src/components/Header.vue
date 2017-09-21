@@ -57,7 +57,8 @@
               {title: '云订货平台', link: 'products.html#/order'},
               {title: '云进销存', link: 'products.html#/jxc'},
               {title: '建材家具厂家版', link: 'products.html#/smtm'},
-              {title: '建材家具门店版', link: 'products.html#/smtagent'}
+              {title: '建材家具门店版', link: 'products.html#/smtagent'},
+              {title: '云考勤', link: 'products.html#/smtagent'}
             ]
           },
           {name: 'buy', title: '购买', link: 'buy.html', sub: []},
@@ -158,7 +159,7 @@
     a {
       display: block;
       color: #666666;
-      font-size: 12px;
+      font-size: 14px;
       margin: 0;
       padding: 0;
       line-height: 40px;
